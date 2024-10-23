@@ -12,7 +12,10 @@ const Slider = () => {
     return (
         <div className="overflow-hidden h-[calc(100vh-80px)]">
 
-            <div className={`h-full flex w-[300vw] transition duration-500 translate-x-[-${index * 100}vw]`}>
+            <div
+                className="h-full flex w-[300vw] transition-transform duration-500"
+                style={{ transform: `translateX(-${index * 100}vw)` }}  // Apply inline style here
+            >
                 {data.map((src, index) =>
                     <img key={index} src={src} alt="" className="h-full object-cover w-screen" />
                 )}
