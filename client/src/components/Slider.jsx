@@ -8,7 +8,6 @@ const Slider = () => {
     ];
 
     const [index, setIndex] = useState(1)
-    console.log(index)
 
     return (
         <div className="overflow-hidden h-[calc(100vh-80px)]">
